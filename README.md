@@ -1,4 +1,4 @@
-# Build process
+# Publishing process
 
 1. `ent prj init`
 2. `ent prj pbs-init` (requires the git bundle repo url)
@@ -8,5 +8,5 @@
 6. Install via `ent prj install` or App Builder
 7. Iterate on steps 3-6.
 
-# Local build/test
+# Local test run (equivalent to npm start)
 1. `ent prj fe-test-run`
