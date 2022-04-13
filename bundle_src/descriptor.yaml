@@ -1,0 +1,7 @@
+code: tableaujs-bundle
+description: This is the Tableau Sample bundle
+
+components:
+  widgets:
+      - ui/widgets/tableaujs/tableaujs/tableaujs-widget-descriptor.yaml
+

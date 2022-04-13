@@ -1,0 +1,23 @@
+{
+  "name": "snapshot",
+  "version": "0.0.0",
+  "description": "Description for snapshot",
+  "private": true,
+  "license": "UNLICENSED",
+  "cacheDirectories": [
+    "node_modules"
+  ],
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "0.0.19-4.1.2",
+    "generator-jhipster": "6.9.0",
+    "generator-jhipster-entando": "file:../../../.entando/ent/quickstart/cli/v6.3.0-sprint12/lib/generator-jhipster-entando/v6.3.0-sprint12"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "scripts": {
+    "populate-bundle": "bash ./buildBundle.sh",
+    "build-all": "bash ./buildBundle.sh -d",
+    "keycloak": "docker-compose -f src/main/docker/keycloak.yml up"
+  }
+}
