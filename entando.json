@@ -1,0 +1,9 @@
+{
+    "microservices": [],
+    "microfrontends": [],
+    "svc": [],
+    "name": "2022-08-08-simple",
+    "version": "0.0.2",
+    "description": "2022-08-08-simple description",
+    "type": "bundle"
+}
