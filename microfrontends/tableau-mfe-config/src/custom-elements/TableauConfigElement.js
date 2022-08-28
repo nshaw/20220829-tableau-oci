@@ -6,7 +6,7 @@ const ATTRIBUTES = {
   url: 'url',
 };
 
-class AppConfigElement extends HTMLElement {
+class TableauConfigElement extends HTMLElement {
   constructor() {
     super();
     this.reactRootRef = React.createRef();
@@ -43,6 +43,6 @@ class AppConfigElement extends HTMLElement {
   }
 }
 
-if (!customElements.get('x-tableaujs-app-config')) {
-  customElements.define('x-tableaujs-app-config', AppConfigElement);
+if (!customElements.get('tableau-mfe-config')) {
+  customElements.define('tableau-mfe-config', TableauConfigElement);
 }

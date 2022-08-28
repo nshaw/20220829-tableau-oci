@@ -28,6 +28,6 @@ class TableauJsElement extends HTMLElement {
     }
 }
 
-customElements.define('x-tableaujs-widget', TableauJsElement);
+customElements.define('tableau-mfe', TableauJsElement);
 
 export default TableauJsElement;

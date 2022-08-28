@@ -1,9 +1,35 @@
 {
     "microservices": [],
-    "microfrontends": [],
+    "microfrontends": [
+        {
+            "name": "tableau-mfe",
+            "configMfe": "tableau-mfe-config",
+            "customElement": "tableau-mfe",
+            "stack": "react",
+            "type": "widget",
+            "group": "free",
+            "publicFolder": "public",
+            "titles": {
+                "en": "Tableau Widget",
+                "it": "Tableau Widget"
+            }
+        },
+        {
+            "name": "tableau-mfe-config",
+            "customElement": "tableau-mfe-config",
+            "stack": "react",
+            "type": "widget-config",
+            "group": "free",
+            "publicFolder": "public",
+            "titles": {
+                "en": "Tableau Widget Config",
+                "it": "Tableau Widget Config"
+            }
+        }
+    ],
     "svc": [],
-    "name": "2022-08-08-simple",
-    "version": "0.0.2",
-    "description": "2022-08-08-simple description",
+    "name": "tableau-demo",
+    "version": "2.0.0",
+    "description": "Tableau Demo MFE with config",
     "type": "bundle"
 }

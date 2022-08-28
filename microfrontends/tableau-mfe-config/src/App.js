@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class AppConfig extends Component {
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -18,15 +18,15 @@ class AppConfig extends Component {
   render() {
     const { url } = this.state;
     return (
-      <div>
-        <h1>Tableau Demo Configuration</h1>
         <div>
-          <label htmlFor="url">Tableau View URL</label>
-          <input name="url" value={url} type="text" onChange={this.handleChange}  />
+          <h1>Tableau Demo Configuration</h1>
+          <div>
+            <label htmlFor="url">Tableau View URL</label>
+            <input name="url" value={url} type="text" onChange={this.handleChange}  />
+          </div>
         </div>
-      </div>
     );
   }
 }
 
-export default AppConfig;
+export default App;
