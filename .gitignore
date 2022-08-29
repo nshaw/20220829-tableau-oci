@@ -152,6 +152,8 @@ Desktop.ini
 ####
 #bundle/
 
+/.entando/
+
 ########
 .ent/ent-state
 
