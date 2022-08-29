@@ -3,7 +3,7 @@
     "microfrontends": [
         {
             "name": "tableau-mfe",
-            "configMfe": "tableau-mfe-config",
+            "configMfe": "tableau-mfe-config2",
             "customElement": "tableau-mfe",
             "stack": "react",
             "type": "widget",
@@ -23,6 +23,14 @@
         {
             "name": "tableau-mfe-config",
             "customElement": "tableau-mfe-config",
+            "stack": "react",
+            "type": "widget-config",
+            "group": "free",
+            "publicFolder": "public"
+        },
+        {
+            "name": "tableau-mfe-config2",
+            "customElement": "tableau-mfe-config2",
             "stack": "react",
             "type": "widget-config",
             "group": "free",
