@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from '../App';
 
 const ATTRIBUTES = {
-  url: 'url',
+    config: 'config'
 };
 
 class TableauJsElement extends HTMLElement {
@@ -21,10 +21,12 @@ class TableauJsElement extends HTMLElement {
     }
 
     connectedCallback() {
+        const attributeConfig = this.getAttribute(ATTRIBUTES.config);
+        const config = attributeConfig && JSON.parse(attributeConfig);
+
         this.mountPoint = document.createElement('div');
         this.appendChild(this.mountPoint);
-        const url = this.getAttribute(ATTRIBUTES.url);
-        ReactDOM.render(<App url={url}/>, this.mountPoint);
+        ReactDOM.render(<App config={config}/>, this.mountPoint);
     }
 }
 

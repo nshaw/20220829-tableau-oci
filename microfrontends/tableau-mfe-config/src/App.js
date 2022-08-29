@@ -4,7 +4,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      url: props.url || 'https://public.tableau.com/views/RegionalSampleWorkbook/Economy',
+      url: this.props.url
     };
   }
 
@@ -22,7 +22,7 @@ class App extends Component {
           <h1>Tableau Demo Configuration</h1>
           <div>
             <label htmlFor="url">Tableau View URL</label>
-            <input name="url" value={url} type="text" onChange={this.handleChange}  />
+            <input id="url" name="url" defaultValue={url} type="text" onChange={this.handleChange}  />
           </div>
         </div>
     );

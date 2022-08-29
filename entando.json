@@ -12,7 +12,13 @@
             "titles": {
                 "en": "Tableau Widget",
                 "it": "Tableau Widget"
-            }
+            },
+            "params": [
+                {
+                    "name": "url",
+                    "description": "The Tableau visualization URL"
+                }
+            ]
         },
         {
             "name": "tableau-mfe-config",
@@ -20,11 +26,7 @@
             "stack": "react",
             "type": "widget-config",
             "group": "free",
-            "publicFolder": "public",
-            "titles": {
-                "en": "Tableau Widget Config",
-                "it": "Tableau Widget Config"
-            }
+            "publicFolder": "public"
         }
     ],
     "svc": [],
