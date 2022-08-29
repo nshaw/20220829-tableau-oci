@@ -4,7 +4,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      url: this.props.url
+      url: props.url || 'https://public.tableau.com/views/RegionalSampleWorkbook/Economy',
     };
   }
 
